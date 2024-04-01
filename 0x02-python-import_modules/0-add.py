@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 a = 1
 b = 2
-from add_0 import add
+exec(compile(open("add_0.py").read(), "add_0.py", 'exec'))
 print(f"{} + {} = {}".format(a, b add(a, b)))
