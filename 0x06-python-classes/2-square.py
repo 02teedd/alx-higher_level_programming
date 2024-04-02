@@ -1,6 +1,17 @@
 #!/usr/bin/python3
 class Square:
     def __init__(self, size=0):
+        """
+        Initializes a Square instance.
+
+        Parameters:
+            size (init): Optional. The size of the sQuare.
+
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is negative.
+        """
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
